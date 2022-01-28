@@ -28,7 +28,7 @@ const NewLinkBox = ({children, id, title, thumbnail, url}) => (<LinkBox cursor="
   className="grid-item-thumbnail"
   placeholder="blur"
 />
-{url?(<a target="_blank" href={url}> <Text mt={2} fontSize={20}>
+{url?(<a target="_blank" rel="noreferrer" href={url}> <Text mt={2} fontSize={20}>
     {title}
   </Text></a>):null}
   {id?(<LinkOverlay href={`/works/${id}`}>
@@ -44,12 +44,12 @@ export const WorkGridItem = ({ children, id, title, thumbnail, url }) => (
   <Box w="100%" textAlign="center">
     {(id!=undefined) ? (
     <NextLink href={`/works/${id}`}> 
-      <NewLinkBox children={children} id={id} title={title} thumbnail={thumbnail} url={url} />
+      <NewLinkBox id={id} title={title} thumbnail={thumbnail} url={url} />
     </NextLink>
     ) : null } 
     {(url!=undefined) ? (
-    <a target="_blank" href={url}> 
-      <NewLinkBox children={children} id={id} title={title} thumbnail={thumbnail} url={url} />
+    <a target="_blank" rel="noreferrer" href={url}> 
+      <NewLinkBox id={id} title={title} thumbnail={thumbnail} url={url} />
     </a>
     ) : null}
   </Box>

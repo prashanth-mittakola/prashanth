@@ -1,24 +1,17 @@
 import NextLink from 'next/link'
 import {
-  Link,
   Container,
   Heading,
   Box,
   Image,
-  SimpleGrid,
   Button,
-  List,
-  ListItem,
-  Icon,
   useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+
 
 
 const Home = () => (
@@ -68,7 +61,7 @@ const Home = () => (
           Work
         </Heading>
         <p>
-          I'm a freelance and a full-stack developer based in India with a
+          I&apos;m a freelance and a full-stack developer based in India with a
           passion for building digital services/stuff.
           from planning, designing and launching products all the
           way to solving real-life problems with code.
@@ -92,7 +85,7 @@ const Home = () => (
           Utilized My Time To Learn Python Programming Language As My First Programming Language.
           </p>
           <p>
-          <a href='https://codewithmosh.com/p/python-programming-course-beginners' target="_blank" style={{textDecoration:"underline"}}> from : CodeWithMosh Python </a>
+          <a href='https://codewithmosh.com/p/python-programming-course-beginners' target="_blank" rel="noreferrer" style={{textDecoration:"underline"}}> from : CodeWithMosh Python </a>
            &amp; Then Started Leaning Web Developing (HTML, CSS, Javascript)
           </p>
         </Box>

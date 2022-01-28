@@ -78,7 +78,7 @@ const Navbar = props => {
             Posts
           </LinkItem>
           <LinkItem
-            _target="_blank"
+            _target="_blank" rel="noreferrer"
             href="https://github.com/prashanth-mittakola/v2"
             path={path}
             display="inline-flex"
