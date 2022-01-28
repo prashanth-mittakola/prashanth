@@ -19,28 +19,19 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+
 
 const Home = () => (
   <Layout>
-    <Container>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-      >
-        Hello, I&apos;m a full-stack developer based in Japan!
-      </Box>
-
-      <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
+    <Container maxW='container.xl'>
+      <Box display={{ md: 'flex' }} my={12}>
+        <Box flexGrow={1} display={'flex'} alignItems={"center"}>
+          <Box>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Prashanth Mittakola
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Skills: HTML, CSS, JS, jQuery, React.js, Next.js</p>
+          </Box>
         </Box>
         <Box
           flexShrink={0}
@@ -52,31 +43,82 @@ const Home = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            maxWidth="100px"
+            maxWidth="150px"
             display="inline-block"
             borderRadius="full"
-            src="/images/takuya.jpg"
+            src="/images/prashanth.jpg"
             alt="Profile image"
+            transition={"all 0.5s"}
+            _hover={{transform:"scale(1.3)"}}
           />
         </Box>
+      </Box>
+      <Box
+        borderRadius="lg"
+        my={12}
+        p={3}
+        textAlign="center"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+      >
+        Hello, I&apos;m a web developer!
       </Box>
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
-        <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop">
+        <p>
+          I'm a freelance and a full-stack developer based in India with a
+          passion for building digital services/stuff.
+          from planning, designing and launching products all the
+          way to solving real-life problems with code.
+          {/* <NextLink href="/works/inkdrop">
             <Link>Inkdrop</Link>
-          </NextLink>
-          .
-        </Paragraph>
+          </NextLink> */}
+        </p>
+        <Box my={4}>
+          <strong>Dynamic Dreamz : </strong> 
+          <span>Udhna, Surat- Trianee (2020 July - 2021 Feb)</span>
+        <p style={{color:'#787878'}}>(Shopify Front-End Web Developer) </p>
+            <p>
+              Learned Shopify, Web Development (HTML, CSS, Javascript, JQuery, Liquid Template Language).
+            </p>
+        </Box>
+        <Box my={4}>
+          <strong>Quarantine (lockdown) 2020 : </strong> 
+          <span>Python Programming Language</span>
+          <p style={{color:'#787878'}}></p>
+          <p>
+          Utilized My Time To Learn Python Programming Language As My First Programming Language.
+          </p>
+          <p>
+          <a href='https://codewithmosh.com/p/python-programming-course-beginners' target="_blank" style={{textDecoration:"underline"}}> from : CodeWithMosh Python </a>
+           &amp; Then Started Leaning Web Developing (HTML, CSS, Javascript)
+          </p>
+        </Box>
+        <Box my={4}>
+          <strong>Siya Fashion : Udhna, Surat- (2019 - 2020)</strong> 
+          <span> (Digital Marketing)</span>
+          <p style={{color:'#787878'}}></p>
+          <p>
+          Worked As A Digital Marketing Manager. SEO, SMO, Google Analytics, Solving Website Optimization, Email Marketing, Etc..
+          </p>
+        </Box>
+        <Box my={4}>
+          <strong>Hashrail : Udhna, Surat - SEO Executive (2018 - 2019)</strong> 
+          <p style={{color:'#787878'}}></p>
+          <p>
+          Worked On Clients Websites. E-Commerce Projects Learned How An E-Commerce Website Works. (WordPress Websites, Shopify)
+          </p>
+        </Box>
+        <Box my={4}>
+          <strong>Satya IT Couching Center : Ameerpet, Hyderabad (2018)</strong> 
+          <p style={{color:'#787878'}}>(Learned Digital Marketing &amp; Python Basics)</p>
+          <span>
+          Got Trained In Digital Marketing. Worked On Theire Projects. &amp; Learned To Develop Websites Using WordPress.
+          </span>
+        </Box>
+
         <Box align="center" my={4}>
           <NextLink href="/works">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -88,120 +130,38 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Education :
         </Heading>
-        <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+        <BioSection my={2}>
+          <BioYear>College : </BioYear>
+          S.R.K Institute Of Computer Science. Surat, Gujarat
+          <p>B.Sc Computer Science</p>
         </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+        <BioSection my={2}>
+          <BioYear>Secondary : </BioYear>
+          Samrat Vidyala. Surat, Gujarat
         </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Works as a freelance
+        <BioSection my={2}>
+          <BioYear>Primary : </BioYear>
+          S.V.V High School. Kesamudram, Warangal, Telangana
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          I ♥ :
         </Heading>
-        <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
-        </Paragraph>
+        <p>
+          Playing Chess, Music, Swimming, Learning new things...
+        </p>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+          Contact :
         </Heading>
-        <List>
-          <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoGithub} />}
-              >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoInstagram} />}
-              >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
-        </List>
-
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
-
-        <Box align="center" my={4}>
-          <NextLink href="/posts">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
+        <p><strong>Email</strong> : mittakolaprashanth@gmail.Com</p>
+        <p><strong>Mob</strong> : +91 88662 38837</p>
       </Section>
     </Container>
   </Layout>

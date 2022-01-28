@@ -21,24 +21,37 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
+const NewLinkBox = ({children, id, title, thumbnail, url}) => (<LinkBox cursor="pointer">
+<Image
+  src={thumbnail}
+  alt={title}
+  className="grid-item-thumbnail"
+  placeholder="blur"
+/>
+{url?(<a target="_blank" href={url}> <Text mt={2} fontSize={20}>
+    {title}
+  </Text></a>):null}
+  {id?(<LinkOverlay href={`/works/${id}`}>
+  <Text mt={2} fontSize={20}>
+    {title}
+  </Text>
+</LinkOverlay>):null}
+<Text fontSize={14}>{children}</Text>
+</LinkBox>)
+
+
+export const WorkGridItem = ({ children, id, title, thumbnail, url }) => (
   <Box w="100%" textAlign="center">
-    <NextLink href={`/works/${id}`}>
-      <LinkBox cursor="pointer">
-        <Image
-          src={thumbnail}
-          alt={title}
-          className="grid-item-thumbnail"
-          placeholder="blur"
-        />
-        <LinkOverlay href={`/works/${id}`}>
-          <Text mt={2} fontSize={20}>
-            {title}
-          </Text>
-        </LinkOverlay>
-        <Text fontSize={14}>{children}</Text>
-      </LinkBox>
+    {(id!=undefined) ? (
+    <NextLink href={`/works/${id}`}> 
+      <NewLinkBox children={children} id={id} title={title} thumbnail={thumbnail} url={url} />
     </NextLink>
+    ) : null } 
+    {(url!=undefined) ? (
+    <a target="_blank" href={url}> 
+      <NewLinkBox children={children} id={id} title={title} thumbnail={thumbnail} url={url} />
+    </a>
+    ) : null}
   </Box>
 )
 
