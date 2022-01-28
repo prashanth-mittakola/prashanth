@@ -40,7 +40,7 @@ const NewLinkBox = ({children, id, title, thumbnail, url}) => (<LinkBox cursor="
 </LinkBox>)
 
 
-export const WorkGridItem = ({ children, id, title, thumbnail, url }) => (
+export const WorkGridItem = ({ id, title, thumbnail, url }) => (
   <Box w="100%" textAlign="center">
     {(id!=undefined) ? (
     <NextLink href={`/works/${id}`}> 

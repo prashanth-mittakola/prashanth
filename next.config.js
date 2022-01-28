@@ -1,4 +1,5 @@
 module.exports = {
   reactStrictMode: true,
-  swcMinify: true
+  swcMinify: false,
+  "presets": ["next/babel"]
 }
