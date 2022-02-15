@@ -23,7 +23,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Prashanth Mittakola
           </Heading>
-          <p>Skills: HTML, CSS, JS, jQuery, React.js, Next.js</p>
+          <p>Skills: HTML, CSS, JS, jQuery, React.js, Next.js, Node.js, Shopify Development, Python, Digital Marketing</p>
           </Box>
         </Box>
         <Box
