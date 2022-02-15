@@ -70,6 +70,14 @@ const Home = () => (
           </NextLink> */}
         </p>
         <Box my={4}>
+          <strong>PantherCodx LLP : </strong> 
+          <span>Katargam, Surat - Developer &amp; Trainee</span>
+        <p style={{color:'#787878'}}>(Shopify Front-End Web Developer &amp; Reatc.js, Next.js, Node.js, Shopify App Dev Trainee)</p>
+            <p>
+              Learned Shopify App Development (React.js, Next.js, Koa.js, Express.js, mongo DB, Node.js).
+            </p>
+        </Box>
+        <Box my={4}>
           <strong>Dynamic Dreamz : </strong> 
           <span>Udhna, Surat- Trianee (2020 July - 2021 Feb)</span>
         <p style={{color:'#787878'}}>(Shopify Front-End Web Developer) </p>
