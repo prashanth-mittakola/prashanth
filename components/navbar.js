@@ -27,7 +27,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
-        _target={_target}
+        target={_target}
         {...props}
       >
         {children}
@@ -74,8 +74,8 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
+          <LinkItem href="/achievements" path={path}>
+            Achievements
           </LinkItem>
           <LinkItem
             _target="_blank" rel="noreferrer"
