@@ -60,18 +60,18 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
-        <p>
+        {/* <p>
           I&apos;m a freelance and a full-stack developer based in India with a
           passion for building digital services/stuff.
           from planning, designing and launching products all the
           way to solving real-life problems with code.
-          {/* <NextLink href="/works/inkdrop">
+          <NextLink href="/works/inkdrop">
             <Link>Inkdrop</Link>
-          </NextLink> */}
-        </p>
+          </NextLink>
+        </p> */}
         <Box my={4}>
           <strong>PantherCodx LLP : </strong> 
-          <span>Katargam, Surat - Developer &amp; Trainee</span>
+          <span>Katargam, Surat - Developer &amp; Trainee (2021 June - Dec)</span>
         <p style={{color:'#787878'}}>(Shopify Front-End Web Developer &amp; Reatc.js, Next.js, Node.js, Shopify App Dev Trainee)</p>
             <p>
               Learned Shopify App Development (React.js, Next.js, Koa.js, Express.js, mongo DB, Node.js).
