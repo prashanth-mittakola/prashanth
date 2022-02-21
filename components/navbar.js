@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+// import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
   const active = path === href
@@ -77,7 +77,10 @@ const Navbar = props => {
           <LinkItem href="/achievements" path={path}>
             Achievements
           </LinkItem>
-          <LinkItem
+          <LinkItem href="/projects" path={path}>
+            Projects
+          </LinkItem>
+          {/* <LinkItem
             _target="_blank" rel="noreferrer"
             href="https://github.com/prashanth-mittakola/v2"
             path={path}
@@ -88,7 +91,7 @@ const Navbar = props => {
           >
             <IoLogoGithub />
             Source
-          </LinkItem>
+          </LinkItem> */}
         </Stack>
 
         <Box flex={1} align="right">

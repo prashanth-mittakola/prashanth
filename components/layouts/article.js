@@ -15,9 +15,9 @@ const Layout = ({ children, title }) => (
     exit="exit"
     variants={variants}
     transition={{ duration: 0.4, type: 'easeInOut' }}
-    style={{ position: 'relative' }}
+    style={{ position: 'relative' , minHeight:"85vh"}}
   >
-    <>
+    <div style={{marginTop:"50px"}}>
       {title && (
         <Head>
           <title>{title} - Prashanth Mittakola</title>
@@ -28,7 +28,7 @@ const Layout = ({ children, title }) => (
       {children}
 
       <GridItemStyle />
-    </>
+    </div>
   </motion.article>
 )
 
