@@ -25,8 +25,8 @@ const Works = () => (
             title="Earphones"
             thumbnail={thumbApple}
           >
-            Apple earphones scroll effect.
           </WorkGridItem>
+          <p style={{textAlign:"center"}}>Apple earphones scroll effect.</p>
         </Section>
         <Section>
           <WorkGridItem
@@ -34,8 +34,8 @@ const Works = () => (
             title="Covid-19"
             thumbnail={thumbCovid}
           >
-            Covid-19 worldwide tracker.
           </WorkGridItem>
+          <p style={{textAlign:"center"}}>Covid-19 tracker.</p>
         </Section>
         <Section>
           <WorkGridItem
@@ -43,8 +43,8 @@ const Works = () => (
             title="Movies"
             thumbnail={thumbMovie}
           >
-            Movies landing page.
           </WorkGridItem>
+          <p style={{textAlign:"center"}}>Movies landing page.</p>
         </Section>
       </SimpleGrid>
     </Container>

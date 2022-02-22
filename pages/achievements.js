@@ -7,8 +7,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import certPython from '../public/images/achievements/certificate-google-ads-fundamentals.png'
-import certGoogleAdsFundamentals from '../public/images/achievements/certificate-python.png'
+import certGoogleAdsFundamentals from '../public/images/achievements/certificate-google-ads-fundamentals.png'
+import certPython from '../public/images/achievements/certificate-python.png'
 
 const Achievements = () => {
   return (
