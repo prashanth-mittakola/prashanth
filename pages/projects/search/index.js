@@ -69,7 +69,7 @@ const Search = () => {
       .catch(e => alert(e))
   }, [])
   return (
-    <Container maxW="container.xl" marginTop={'50px'} minHeight="85vh">
+    <Container maxW="container.xl" marginTop={'50px'} minHeight="85vh" overflowX={"scroll"}>
       {/* <Heading as="h3" fontSize={20} mb={4}>
         Search
       </Heading> */}
