@@ -65,7 +65,7 @@ const Home = () => (
           passion for building digital services/stuff.
           from planning, designing and launching products all the
           way to solving real-life problems with code.
-          <NextLink href="/works/inkdrop">
+          <NextLink href="/learnings/inkdrop">
             <Link>Inkdrop</Link>
           </NextLink>
         </p> */}
@@ -121,8 +121,8 @@ const Home = () => (
         </Box>
 
         <Box align="center" my={4}>
-          <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+          <NextLink href="/learnings">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="#805ad5">
               My portfolio
             </Button>
           </NextLink>

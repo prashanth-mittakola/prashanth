@@ -31,7 +31,7 @@ const NewLinkBox = ({children, id, title, thumbnail, url}) => (<LinkBox cursor="
 {url?(<a target="_blank" rel="noreferrer" href={url}> <Text mt={2} fontSize={20}>
     {title}
   </Text></a>):null}
-  {id?(<LinkOverlay href={`/works/${id}`}>
+  {id?(<LinkOverlay href={`/learnings/${id}`}>
   <Text mt={2} fontSize={20}>
     {title}
   </Text>
@@ -43,7 +43,7 @@ const NewLinkBox = ({children, id, title, thumbnail, url}) => (<LinkBox cursor="
 export const WorkGridItem = ({ id, title, thumbnail, url }) => (
   <Box w="100%" textAlign="center">
     {(id!=undefined) ? (
-    <NextLink href={`/works/${id}`}> 
+    <NextLink href={`/learnings/${id}`}> 
       <NewLinkBox id={id} title={title} thumbnail={thumbnail} url={url} />
     </NextLink>
     ) : null } 

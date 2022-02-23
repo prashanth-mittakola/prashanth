@@ -7,9 +7,9 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbApple from '../public/images/works/apple-earphones-scroll-ss.png'
-import thumbCovid from '../public/images/works/covid-19-ss.png'
-import thumbMovie from '../public/images/works/movie-landing-page-ss.png'
+import thumbApple from '../public/images/learnings/apple-earphones-scroll-ss.png'
+import thumbCovid from '../public/images/learnings/covid-19-ss.png'
+import thumbMovie from '../public/images/learnings/movie-landing-page-ss.png'
 
 const Works = () => (
   <Layout title="Works">
