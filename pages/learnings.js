@@ -11,11 +11,11 @@ import thumbApple from '../public/images/learnings/apple-earphones-scroll-ss.png
 import thumbCovid from '../public/images/learnings/covid-19-ss.png'
 import thumbMovie from '../public/images/learnings/movie-landing-page-ss.png'
 
-const Works = () => (
-  <Layout title="Works">
+const Leanings = () => (
+  <Layout title="Leanings">
     <Container>
       {/* <Heading as="h3" fontSize={20} mb={4}>
-        Works
+        Leanings
       </Heading> */}
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -51,4 +51,4 @@ const Works = () => (
   </Layout>
 )
 
-export default Works
+export default Leanings
