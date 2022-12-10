@@ -56,7 +56,7 @@ const Projects = () => (
                     style={{
                       fontSize: '42px',
                       fontWeight: 'bold',
-                      color: 'red'
+                      color: '#88ccca'
                     }}
                   >
                     {index + 1}
