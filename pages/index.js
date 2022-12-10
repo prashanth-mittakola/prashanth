@@ -12,8 +12,6 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
-
-
 const Home = () => (
   <Layout>
     <Container maxW='container.xl'>
