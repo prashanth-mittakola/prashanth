@@ -1,3 +1,18 @@
 body{
     min-height: 100vh;
 }
+
+.file-explorer .file,
+.file-explorer .folder {
+  cursor: pointer;
+}
+
+.file-explorer span {
+  font-size: 24px;
+}
+.file-explorer .folder span {
+  font-weight: 600;
+}
+.file-explorer .file span {
+  font-weight: 400;
+}
