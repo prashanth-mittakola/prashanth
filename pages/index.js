@@ -54,7 +54,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I'm a web developer!
+        {`Hello, I'm a web developer!`}
       </Box>
 
       <Section delay={0.1}>
@@ -71,9 +71,9 @@ const Home = () => (
             fabric.js)
           </p>
           <p>
-            Worked on ecommerce websites. Built ecommerce front-end UI & all the
+            {`Worked on ecommerce websites. Built ecommerce front-end UI & all the
             functionalities (using React.js, Next.js, API's). Supported in a
-            project for canvas development using fabric.js, etc.
+            project for canvas development using fabric.js, etc.`}
           </p>
         </Box>
 
