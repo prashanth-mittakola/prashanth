@@ -1,18 +1,18 @@
-import { Box } from "@chakra-ui/react";
-import { useState } from "react";
-import FileComp from "./FileComp";
+import { Box, Input } from '@chakra-ui/react'
+import { useState } from 'react'
+import FileComp from './FileComp'
 
 const inputBoxInitialData = {
   visible: false,
   isFolder: false,
-  value: "",
-};
+  value: ''
+}
 const showIconsInitialData = {
   folderIcon: false,
   fileIcon: false,
   renameIcon: false,
-  deleteIcon: false,
-};
+  deleteIcon: false
+}
 
 // const SpanIcon = (props) => {
 //   return (
@@ -22,36 +22,46 @@ const showIconsInitialData = {
 //   );
 // };
 
-const Folder = ({ handleRenameNode, handleDeleteNode, handleInsertNode, explorerData }) => {
-  const [name, setName] = useState(explorerData?.name || "");
-  const [showRenameInput, setShowRenameInput] = useState(false);
-  const [expandFolder, setExpandFolder] = useState(false);
-  const [showIcons, setShowIcons] = useState(showIconsInitialData);
-  const [inputBox, setInputBox] = useState(inputBoxInitialData);
+const Folder = ({
+  handleRenameNode,
+  handleDeleteNode,
+  handleInsertNode,
+  explorerData
+}) => {
+  const [name, setName] = useState(explorerData?.name || '')
+  const [showRenameInput, setShowRenameInput] = useState(false)
+  const [expandFolder, setExpandFolder] = useState(false)
+  const [showIcons, setShowIcons] = useState(showIconsInitialData)
+  const [inputBox, setInputBox] = useState(inputBoxInitialData)
 
   const handleCreateNewNode = () => {
     if (inputBox.value.trim()) {
-      handleInsertNode(explorerData.id, inputBox.value, inputBox.isFolder);
+      handleInsertNode(explorerData.id, inputBox.value, inputBox.isFolder)
     }
-    setInputBox(inputBoxInitialData);
-    setExpandFolder(true);
-  };
+    setInputBox(inputBoxInitialData)
+    setExpandFolder(true)
+  }
 
   const deleteHandler = () => {
-    handleDeleteNode(explorerData.id);
-    setExpandFolder(false);
-  };
+    handleDeleteNode(explorerData.id)
+    setExpandFolder(false)
+  }
   const renameHandler = () => {
     if (!showRenameInput) {
-      setShowIcons((prev) => ({ ...prev, deleteIcon: false, fileIcon: false, folderIcon: false }));
+      setShowIcons(prev => ({
+        ...prev,
+        deleteIcon: false,
+        fileIcon: false,
+        folderIcon: false
+      }))
     }
-    handleRenameNode(explorerData.id, name);
-    setShowRenameInput(!showRenameInput);
-  };
+    handleRenameNode(explorerData.id, name)
+    setShowRenameInput(!showRenameInput)
+  }
 
   if (explorerData?.isFolder) {
     return (
-      <Box className="folder" style={{ marginLeft: "15px" }}>
+      <Box className="folder" style={{ marginLeft: '15px' }}>
         <Box
           className="folder-block"
           onClick={() => !showRenameInput && setExpandFolder(!expandFolder)}
@@ -60,7 +70,7 @@ const Folder = ({ handleRenameNode, handleDeleteNode, handleInsertNode, explorer
               folderIcon: true,
               fileIcon: true,
               renameIcon: true,
-              deleteIcon: true,
+              deleteIcon: true
             })
           }
           onMouseLeave={() =>
@@ -68,98 +78,120 @@ const Folder = ({ handleRenameNode, handleDeleteNode, handleInsertNode, explorer
               folderIcon: false,
               fileIcon: false,
               renameIcon: false,
-              deleteIcon: false,
+              deleteIcon: false
             })
           }
         >
-          
-        <span role="img" aria-label="folder">
-          📂 {showRenameInput ? <input autoFocus type="text" value={name} onChange={(e) => setName(e.target.value)} onBlur={renameHandler} /> : name}
-        </span>
-        <div style={{ display: "inline-block", marginLeft: "20px" }}>
-          {showIcons.folderIcon && (
-            <span
-              style={{ margin: "0 5px" }}
-              role="img"
-              aria-label="folder"
-              onClick={(e) => {
-                e.stopPropagation();
-                setInputBox((prev) => {
-                  return {
-                    ...prev,
-                    visible: !prev.visible,
-                    isFolder: true,
-                  };
-                });
-              }}
-            >
-              📂
-            </span>
-          )}
-          {showIcons.fileIcon && (
-            <span
-              style={{ margin: "0 5px" }}
-              role="img"
-              aria-label="file"
-              onClick={(e) => {
-                e.stopPropagation();
-                setInputBox((prev) => {
-                  return {
-                    ...prev,
-                    visible: !prev.visible,
-                    isFolder: false,
-                  };
-                });
-              }}
-            >
-              📄
-            </span>
-          )}
+          <span role="img" aria-label="folder">
+            📂
+            {showRenameInput ? (
+              <Input
+                htmlSize={4}
+                width="auto"
+                autoFocus
+                type="text"
+                value={name}
+                onChange={e => setName(e.target.value)}
+                onBlur={renameHandler}
+                onKeyDown={e => {
+                  e.keyCode === 13 && renameHandler()
+                }}
+              />
+            ) : (
+              name
+            )}
+          </span>
+          <div style={{ display: 'inline-block', marginLeft: '20px' }}>
+            {showIcons.folderIcon && (
+              <span
+                style={{ margin: '0 5px' }}
+                role="img"
+                aria-label="folder"
+                onClick={e => {
+                  e.stopPropagation()
+                  setInputBox(prev => {
+                    return {
+                      ...prev,
+                      visible: !prev.visible,
+                      isFolder: true
+                    }
+                  })
+                }}
+              >
+                📂
+              </span>
+            )}
+            {showIcons.fileIcon && (
+              <span
+                style={{ margin: '0 5px' }}
+                role="img"
+                aria-label="file"
+                onClick={e => {
+                  e.stopPropagation()
+                  setInputBox(prev => {
+                    return {
+                      ...prev,
+                      visible: !prev.visible,
+                      isFolder: false
+                    }
+                  })
+                }}
+              >
+                📄
+              </span>
+            )}
 
-          {showIcons.renameIcon && (
-            <span
-              style={{ margin: "0 5px" }}
-              role="img"
-              aria-label="rename"
-              onClick={(e) => {
-                e.stopPropagation();
-                renameHandler();
-              }}
-            >
-              ✏️
-            </span>
-          )}
-          {showIcons.deleteIcon && (
-            <span
-              style={{ margin: "0 5px" }}
-              role="img"
-              aria-label="remove"
-              onClick={(e) => {
-                e.stopPropagation();
-                deleteHandler();
-              }}
-            >
-              ❌
-            </span>
-          )}
-        </div>
+            {showIcons.renameIcon && (
+              <span
+                style={{ margin: '0 5px' }}
+                role="img"
+                aria-label="rename"
+                onClick={e => {
+                  e.stopPropagation()
+                  renameHandler()
+                }}
+              >
+                ✏️
+              </span>
+            )}
+            {showIcons.deleteIcon && (
+              <span
+                style={{ margin: '0 5px' }}
+                role="img"
+                aria-label="remove"
+                onClick={e => {
+                  e.stopPropagation()
+                  deleteHandler()
+                }}
+              >
+                ❌
+              </span>
+            )}
+          </div>
         </Box>
         {inputBox.visible && (
-          <div style={{ marginLeft: "25px", marginTop: "5px" }}>
-            <input
+          <div style={{ marginLeft: '25px', marginTop: '5px' }}>
+            <Input
+              htmlSize={4}
+              width="auto"
               type="text"
               autoFocus
               value={inputBox.value}
-              onClick={(e) => e.stopPropagation()}
-              onChange={(e) => setInputBox({ ...inputBox, value: e.target.value })}
+              onClick={e => e.stopPropagation()}
+              onChange={e =>
+                setInputBox({ ...inputBox, value: e.target.value })
+              }
               onBlur={handleCreateNewNode}
+              onKeyDown={e => {
+                e.keyCode === 13 && handleCreateNewNode()
+              }}
             />
           </div>
         )}
         {expandFolder && (
           <div className="folder-block">
             {explorerData.items.map(
-              (item) =>
+              item =>
                 item.id && (
                   <Folder
                     key={item.id}
@@ -174,7 +206,7 @@ const Folder = ({ handleRenameNode, handleDeleteNode, handleInsertNode, explorer
           </div>
         )}
       </Box>
-    );
+    )
   }
   return explorerData?.name ? (
     <FileComp
@@ -188,8 +220,8 @@ const Folder = ({ handleRenameNode, handleDeleteNode, handleInsertNode, explorer
       setName={setName}
     />
   ) : (
-    ""
-  );
-};
+    ''
+  )
+}
 
-export default Folder;
+export default Folder
