@@ -26,15 +26,15 @@ const FileExplorer = () => {
     <Layout>
       <Container maxW="container.xl" className="file-explorer">
         <Box display={{ md: 'flex' }} my={12}>
-            <Heading as="h3" variant="page-title">
+          <Heading size={'lg'} as="h3" variant="page-title">
             File Explorer
-            </Heading>
+          </Heading>
         </Box>
         <Folder
-        explorerData={explorerData}
-        handleInsertNode={handleInsertNode}
-        handleDeleteNode={handleDeleteNode}
-        handleRenameNode={handleRenameNode}
+          explorerData={explorerData}
+          handleInsertNode={handleInsertNode}
+          handleDeleteNode={handleDeleteNode}
+          handleRenameNode={handleRenameNode}
         />
       </Container>
     </Layout>
