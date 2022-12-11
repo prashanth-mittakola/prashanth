@@ -14,14 +14,17 @@ import Section from '../components/section'
 
 const Home = () => (
   <Layout>
-    <Container maxW='container.xl'>
+    <Container maxW="container.xl">
       <Box display={{ md: 'flex' }} my={12}>
-        <Box flexGrow={1} display={'flex'} alignItems={"center"}>
+        <Box flexGrow={1} display={'flex'} alignItems={'center'}>
           <Box>
-          <Heading as="h2" variant="page-title">
-            Prashanth Mittakola
-          </Heading>
-          <p>Skills: HTML, CSS, JS, jQuery, React.js, Next.js, Node.js, Shopify Development, Python, Digital Marketing</p>
+            <Heading as="h2" variant="page-title">
+              Prashanth Mittakola
+            </Heading>
+            <p>
+              Skills: HTML, CSS, JS, jQuery, React.js, Next.js, Node.js, Shopify
+              Development, Python, Digital Marketing
+            </p>
           </Box>
         </Box>
         <Box
@@ -39,8 +42,8 @@ const Home = () => (
             borderRadius="full"
             src="/images/prashanth.jpg"
             alt="Profile image"
-            transition={"all 0.5s"}
-            _hover={{transform:"scale(1.3)"}}
+            transition={'all 0.5s'}
+            _hover={{ transform: 'scale(1.3)' }}
           />
         </Box>
       </Box>
@@ -58,63 +61,88 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
-        {/* <p>
-          I&apos;m a freelance and a full-stack developer based in India with a
-          passion for building digital services/stuff.
-          from planning, designing and launching products all the
-          way to solving real-life problems with code.
-          <NextLink href="/learnings/inkdrop">
-            <Link>Inkdrop</Link>
-          </NextLink>
-        </p> */}
         <Box my={4}>
-          <strong>PantherCodx LLP : </strong> 
-          <span>Katargam, Surat - Developer &amp; Trainee (2021 June - Dec)</span>
-        <p style={{color:'#787878'}}>(Shopify Front-End Web Developer &amp; Reatc.js, Next.js, Node.js, Shopify App Dev Trainee)</p>
-            <p>
-              Learned Shopify App Development (React.js, Next.js, Koa.js, Express.js, mongo DB, Node.js).
-            </p>
-        </Box>
-        <Box my={4}>
-          <strong>Dynamic Dreamz : </strong> 
-          <span>Udhna, Surat- Trianee (2020 July - 2021 Feb)</span>
-        <p style={{color:'#787878'}}>(Shopify Front-End Web Developer) </p>
-            <p>
-              Learned Shopify, Web Development (HTML, CSS, Javascript, JQuery, Liquid Template Language).
-            </p>
-        </Box>
-        <Box my={4}>
-          <strong>Quarantine (lockdown) 2020 : </strong> 
-          <span>Python Programming Language</span>
-          <p style={{color:'#787878'}}></p>
-          <p>
-          Utilized My Time To Learn Python Programming Language As My First Programming Language.
+          <strong>NopAdvance LLP (Adwanz Solutions LLP) : </strong>
+          <span>Sagrampura, Surat - React.js Developer (<b>Present</b>)</span>
+          <p style={{ color: '#787878' }}>
+            (Front-End Web Developer React.js, Redux.js, Next.js &amp;
+            fabric.js)
           </p>
           <p>
-          <a href='https://codewithmosh.com/p/python-programming-course-beginners' target="_blank" rel="noreferrer" style={{textDecoration:"underline"}}> from : CodeWithMosh Python </a>
-           &amp; Then Started Leaning Web Developing (HTML, CSS, Javascript)
+            Worked on ecommerce websites. Built ecommerce front-end UI & all the
+            functionalities (using React.js, Next.js, API's). Supported in a
+            project for canvas development using fabric.js, etc.
           </p>
         </Box>
+
         <Box my={4}>
-          <strong>Siya Fashion : Udhna, Surat- (2019 - 2020)</strong> 
-          <span> (Digital Marketing)</span>
-          <p style={{color:'#787878'}}></p>
-          <p>
-          Worked As A Digital Marketing Manager. SEO, SMO, Google Analytics, Solving Website Optimization, Email Marketing, Etc..
-          </p>
-        </Box>
-        <Box my={4}>
-          <strong>Hashrail : Udhna, Surat - SEO Executive (2018 - 2019)</strong> 
-          <p style={{color:'#787878'}}></p>
-          <p>
-          Worked On Clients Websites. E-Commerce Projects Learned How An E-Commerce Website Works. (WordPress Websites, Shopify)
-          </p>
-        </Box>
-        <Box my={4}>
-          <strong>Satya IT Couching Center : Ameerpet, Hyderabad (2018)</strong> 
-          <p style={{color:'#787878'}}>(Learned Digital Marketing &amp; Python Basics)</p>
+          <strong>PantherCodx LLP : </strong>
           <span>
-          Got Trained In Digital Marketing. Worked On Theire Projects. &amp; Learned To Develop Websites Using WordPress.
+            Katargam, Surat - Developer &amp; Trainee (2021 June - Dec)
+          </span>
+          <p style={{ color: '#787878' }}>
+            (Shopify Front-End Web Developer &amp; React.js, Next.js, Node.js,
+            Shopify App Dev Trainee)
+          </p>
+          <p>
+            Learned Shopify App Development (React.js, Next.js, Koa.js,
+            Express.js, mongo DB, Node.js).
+          </p>
+        </Box>
+        <Box my={4}>
+          <strong>Dynamic Dreamz : </strong>
+          <span>Udhna, Surat- Trianee (2020 July - 2021 Feb)</span>
+          <p style={{ color: '#787878' }}>(Shopify Front-End Web Developer) </p>
+          <p>
+            Learned Shopify, Web Development (HTML, CSS, Javascript, JQuery,
+            Liquid Template Language).
+          </p>
+        </Box>
+        <Box my={4}>
+          <strong>Quarantine (lockdown) 2020 : </strong>
+          <span>Python Programming Language</span>
+          <p style={{ color: '#787878' }}></p>
+          <p>
+            Utilized My Time To Learn Python Programming Language As My First
+            Programming Language.
+          </p>
+          <p>
+            <a
+              href="https://codewithmosh.com/p/python-programming-course-beginners"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: 'underline' }}
+            >
+              from : CodeWithMosh Python
+            </a>
+            &amp; Then Started Leaning Web Developing (HTML, CSS, Javascript)
+          </p>
+        </Box>
+        <Box my={4}>
+          <strong>Siya Fashion : Udhna, Surat- (2019 - 2020)</strong>
+          <span> (Digital Marketing)</span>
+          <p style={{ color: '#787878' }}></p>
+          <p>
+            Worked As A Digital Marketing Manager. SEO, SMO, Google Analytics,
+            Solving Website Optimization, Email Marketing, Etc..
+          </p>
+        </Box>
+        <Box my={4}>
+          <strong>Hashrail : Udhna, Surat - SEO Executive (2018 - 2019)</strong>
+          <p style={{ color: '#787878' }}></p>
+          <p>
+            Worked On Clients Websites. E-Commerce Projects Learned How An
+            E-Commerce Website Works. (WordPress Websites, Shopify)
+          </p>
+        </Box>
+        <Box my={4}>
+          <strong>Satya IT Couching Center : Ameerpet, Hyderabad (2018)</strong>
+          <p style={{ color: '#787878' }}>
+            (Learned Digital Marketing &amp; Python Basics)
+          </p>
+          <span>
+            Got Trained In Digital Marketing. Worked On Theire Projects. &amp;
+            Learned To Develop Websites Using WordPress.
           </span>
         </Box>
 
@@ -150,17 +178,19 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           I ♥ :
         </Heading>
-        <p>
-          Playing Chess, Music, Swimming, Learning new things...
-        </p>
+        <p>Playing Chess, Music, Swimming, Learning new things...</p>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Contact :
         </Heading>
-        <p><strong>Email</strong> : mittakolaprashanth@gmail.Com</p>
-        <p><strong>Mob</strong> : +91 88662 38837</p>
+        <p>
+          <strong>Email</strong> : mittakolaprashanth@gmail.Com
+        </p>
+        <p>
+          <strong>Mob</strong> : +91 88662 38837
+        </p>
       </Section>
     </Container>
   </Layout>
