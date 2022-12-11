@@ -54,7 +54,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a web developer!
+        Hello, I'm a web developer!
       </Box>
 
       <Section delay={0.1}>
@@ -63,7 +63,9 @@ const Home = () => (
         </Heading>
         <Box my={4}>
           <strong>NopAdvance LLP (Adwanz Solutions LLP) : </strong>
-          <span>Sagrampura, Surat - React.js Developer (<b>Present</b>)</span>
+          <span>
+            Sagrampura, Surat - React.js Developer (<b>Present</b>)
+          </span>
           <p style={{ color: '#787878' }}>
             (Front-End Web Developer React.js, Redux.js, Next.js &amp;
             fabric.js)
