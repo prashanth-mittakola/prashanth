@@ -23,15 +23,15 @@ const projectsData = [
     newTab: true
   },
   {
-    title: 'Covid-19',
-    link: 'https://codepen.io/prashant-mittakola/full/LYRzPPa',
-    description: 'Covid-19 tracker.',
+    title: 'Next.js + Framer Motion',
+    link: 'https://next-js-13-movies-demo-app.vercel.app/',
+    description: `Next.js V.13 + <a href="https://www.framer.com/motion/" target="_blank" style="text-decoration:underline; color:blue;">Framer Motion</a> + <a href="https://www.themoviedb.org/" target="_blank" style="text-decoration:underline; color:blue;">TheMovieDB API.</a>`,
     newTab: true
   },
   {
     title: 'corona tracker + search filter',
     link: '/projects/covid/search',
-    description: `Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus. Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment. However, some will become seriously ill and require medical attention.`,
+    description: `COVID-19 tracker.`,
     newTab: false
   }
 ]
@@ -72,7 +72,13 @@ const Projects = () => (
                     {item.title}
                   </h3>
                   <p style={{ fontSize: '16px', color: '#a7a7a7' }}>
-                    {item.description}
+                    {item.description.indexOf('<a href=') === -1 ? (
+                      item.description
+                    ) : (
+                      <div
+                        dangerouslySetInnerHTML={{ __html: item.description }}
+                      />
+                    )}
                   </p>
                 </div>
               </a>

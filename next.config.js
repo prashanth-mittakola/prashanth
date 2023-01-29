@@ -1,5 +1,8 @@
 module.exports = {
   reactStrictMode: true,
   swcMinify: false,
-  "presets": ["next/babel"]
+  "presets": ["next/babel"],
+  experimental: {
+    forceSwcTransforms: true,
+  },
 }
