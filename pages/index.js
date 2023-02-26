@@ -61,7 +61,7 @@ const Home = () => (
         <div className="work-block">
           <Heading as="h3" variant="section-title" title={"Work"} />
           {resumeData.work.map((item, index) => {
-            const {company, address, role, year, technologies, heading, description, descriptionHtml} = item;
+            const {company, address, year, technologies, heading, description, descriptionHtml} = item;
             return (
               <Box my={4} key={index}>
                 <Strong data={company ?? heading} />
@@ -75,7 +75,7 @@ const Home = () => (
             );
           })}
           <Box align="center" mt={8}>
-            <Link href="/projects">
+            <Link href="/projects" passHref>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My portfolio
               </Button>
