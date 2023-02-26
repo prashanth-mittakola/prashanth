@@ -71,15 +71,16 @@ const Projects = () => (
                   >
                     {item.title}
                   </h3>
-                  <p style={{ fontSize: '16px', color: '#a7a7a7' }}>
-                    {item.description.indexOf('<a href=') === -1 ? (
-                      item.description
-                    ) : (
-                      <div
-                        dangerouslySetInnerHTML={{ __html: item.description }}
-                      />
-                    )}
-                  </p>
+                  {item.description.indexOf('<a href=') === -1 ? (
+                    <p style={{ fontSize: '16px', color: '#a7a7a7' }}>
+                      {item.description}
+                    </p>
+                  ) : (
+                    <div
+                      style={{ fontSize: '16px', color: '#a7a7a7' }}
+                      dangerouslySetInnerHTML={{ __html: item.description }}
+                    />
+                  )}
                 </div>
               </a>
             </Link>

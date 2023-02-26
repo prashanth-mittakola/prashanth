@@ -1,5 +1,6 @@
-body{
-    min-height: 100vh;
+body {
+  min-height: 100vh;
+  text-align: justify;
 }
 
 .file-explorer .file,
@@ -15,4 +16,24 @@ body{
 }
 .file-explorer .file span {
   font-weight: 400;
+}
+.work-block {
+  text-transform: capitalize;
+  text-align: justify;
+}
+.my-2 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.mb-2 {
+  margin-bottom: 4px;
+}
+.mt-2 {
+  margin-top: 4px;
+}
+.color-black {
+  color: #000;
+}
+.color-grey {
+  color: #505050;
 }
