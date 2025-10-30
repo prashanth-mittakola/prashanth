@@ -1,32 +1,51 @@
 {
-  "name": "prashanth-homepage",
-  "version": "1.0.0",
-  "description": "Prashanth's website",
-  "scripts": {
-    "dev": "next dev -H 0.0.0.0",
-    "build": "next build",
-    "start": "next start",
-    "prettier": "prettier --write .",
-    "lint": "next lint"
-  },
-  "keywords": [],
-  "author": "Prashanth Mittakola",
-  "license": "MIT",
-  "dependencies": {
-    "@chakra-ui/icons": "^1.1.1",
-    "@chakra-ui/react": "^1.7.2",
-    "@emotion/react": "^11.6.0",
-    "@emotion/styled": "^11.6.0",
-    "framer-motion": "^5.3.0",
-    "next": "^12.0.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
-    "three": "^0.134.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-next": "^12.0.4",
-    "prettier": "^2.4.1"
-  }
+	"name": "prashanth",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --write .",
+		"lint": "prettier --check . && eslint ."
+	},
+	"devDependencies": {
+		"@eslint/compat": "^1.4.0",
+		"@eslint/js": "^9.36.0",
+		"@fontsource/fira-mono": "^5.2.7",
+		"@internationalized/date": "^3.10.0",
+		"@lucide/svelte": "^0.544.0",
+		"@neoconfetti/svelte": "^2.2.2",
+		"@sveltejs/adapter-auto": "^6.1.0",
+		"@sveltejs/kit": "^2.43.2",
+		"@sveltejs/vite-plugin-svelte": "^6.2.0",
+		"@tailwindcss/typography": "^0.5.18",
+		"@tailwindcss/vite": "^4.1.13",
+		"@types/node": "^22",
+		"bits-ui": "^2.11.4",
+		"clsx": "^2.1.1",
+		"eslint": "^9.36.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-svelte": "^3.12.4",
+		"globals": "^16.4.0",
+		"prettier": "^3.6.2",
+		"prettier-plugin-svelte": "^3.4.0",
+		"prettier-plugin-tailwindcss": "^0.6.14",
+		"svelte": "^5.39.5",
+		"svelte-check": "^4.3.2",
+		"tailwind-merge": "^3.3.1",
+		"tailwind-variants": "^3.1.1",
+		"tailwindcss": "^4.1.13",
+		"tw-animate-css": "^1.4.0",
+		"typescript": "^5.9.2",
+		"typescript-eslint": "^8.44.1",
+		"vite": "^7.1.7"
+	},
+	"dependencies": {
+		"mode-watcher": "^1.1.0"
+	}
 }

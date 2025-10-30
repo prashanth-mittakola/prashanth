@@ -1,20 +1,38 @@
-## Stack
+# sv
 
-- [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
-- [Chakra UI](https://chakra-ui.com/) - A simple, modular and accessible component library for React
-- [Three.js](https://threejs.org/) - 3D library for JavaScript
-- [Framer Motion](https://www.framer.com/motion/) - An animation library for React
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Project structure
+## Creating a project
 
+If you're seeing this, you've probably already done this step. Congrats!
+
+```sh
+# create a new project in the current directory
+npx sv create
+
+# create a new project in my-app
+npx sv create my-app
 ```
-$PROJECT_ROOT
-│   # Page files
-├── pages
-│   # React component files
-├── components
-│   # Non-react modules
-├── lib
-│   # Static files for images and 3d model file
-└── public
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
+
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
