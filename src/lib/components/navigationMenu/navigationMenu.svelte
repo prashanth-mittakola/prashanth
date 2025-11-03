@@ -22,22 +22,22 @@
 			{
 				title: 'Skills',
 				icon: Shapes,
-				href: '/#skills'
+				href: '/skills'
 			},
 			{
 				title: 'Experience',
 				icon: BriefcaseBusiness,
-				href: '/#experience'
+				href: '/experience'
 			},
 			{
 				title: 'Projects',
 				icon: Box,
-				href: '/#projects'
+				href: '/projects'
 			},
 			{
 				title: 'Education',
 				icon: GraduationCap,
-				href: '/#education'
+				href: '/education'
 			},
 			{
 				title: 'Resume',
@@ -97,20 +97,20 @@
 					</Sheet.Trigger>
 					<Sheet.Content>
 						<Sheet.Header class="p-2">
-							<Sheet.Title class="invisible">Menu</Sheet.Title>
-							{@render navItems()}
-							<Separator />
-							<a href={'#'}>
-								<Button
-									onclick={toggleMode}
-									class="flex flex-row items-center justify-center gap-2"
-									variant="ghost"
-								>
-									<span class="text-xl"><SunMoon /></span>
-									<span>{mode.current}</span>
-								</Button>
-							</a>
+							<Sheet.Title class="hidden">Menu</Sheet.Title>
 						</Sheet.Header>
+						{@render navItems()}
+						<Separator />
+						<a href={'#'}>
+							<Button
+								onclick={toggleMode}
+								class="flex flex-row items-center justify-center gap-2"
+								variant="ghost"
+							>
+								<span class="text-xl"><SunMoon /></span>
+								<span>{mode.current}</span>
+							</Button>
+						</a>
 					</Sheet.Content>
 				</Sheet.Root>
 			</div>

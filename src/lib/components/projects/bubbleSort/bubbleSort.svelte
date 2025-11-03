@@ -53,7 +53,7 @@
 		<Card.Content class="flex flex-col justify-center gap-4">
 			<div id="graph">
 				{#each numArr as num, index (index)}
-					<div class="graph-bar" style="width: 1%; height: {num}%;"></div>
+					<div class="graph-bar w-[1.5%] sm:w-[1%]" style="height: {num}%;"></div>
 					{#if index < numArr.length - 1}
 						<div class="graph-divider" style="width: 0.5%;"></div>
 					{/if}

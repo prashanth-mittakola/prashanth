@@ -1,10 +1,10 @@
 <script lang="ts">
 	import Separator from '$lib/components/ui/separator/separator.svelte';
 	import * as Card from '$lib/components/ui/card/index.js';
-	import Education from './education.svelte';
-	import Experience from './experience.svelte';
+	import Education from './education/education.svelte';
+	import Experience from './experience/experience.svelte';
 	import SkillCards from './skills/skillCards.svelte';
-	import Projects from './projects.svelte';
+	import Projects from './projects/projects.svelte';
 
 	import prashanthImage from '../public/images/prashanth.jpg';
 	import certificatePythonImage from '../public/images/achievements/certificate-python.png';
@@ -46,7 +46,7 @@
 </div>
 
 <Separator class="my-4" />
-<SkillCards />
+<SkillCards enableCarousel={true} />
 
 <Separator class="my-4" />
 <Experience />
@@ -56,7 +56,7 @@
 
 <!-- I ♥️ -->
 <Separator class="my-4" />
-<div id="i-love" class="i-love-section px-6">
+<div id="i-love" class="i-love-section">
 	<h3 class="my-4 text-center text-2xl font-bold">I ♥️</h3>
 	<Card.Root class="my-4 w-full">
 		<Card.Description class="px-6"
@@ -70,7 +70,7 @@
 
 <!-- contact -->
 <Separator class="my-4" />
-<div id="contact" class="contact-section px-6">
+<div id="contact" class="contact-section">
 	<h3 class="my-4 text-center text-2xl font-bold">Contact</h3>
 	<Card.Root class="my-4 w-full">
 		<Card.Header>

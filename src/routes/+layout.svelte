@@ -15,7 +15,7 @@
 	<footer class="flex flex-row items-center justify-center">
 		<p class="hidden">©Footer</p>
 
-		<div class="space-x-4">
+		<div class="space-x-2 text-sm">
 			<a href="mailto:mittakolaprashanth@gmail.com" class="text-blue-600 hover:underline">Email</a>
 			<span class="text-gray-400">|</span>
 			<a

@@ -2,7 +2,7 @@
 	import * as Card from '$lib/components/ui/card/index.js';
 </script>
 
-<div id="education" class="education-section px-6">
+<div id="education" class="education-section">
 	<h3 class="my-4 text-center text-2xl font-bold">Education</h3>
 	<div class="my-4 flex flex-wrap gap-4">
 		<Card.Root class="w-full">

@@ -1,5 +1,5 @@
 <script>
-	import Skills from '$lib/components/skills/skills.svelte';
+	import Skills from './skillCards.svelte';
 </script>
 
-<Skills />
+<Skills enableCarousel={false} />

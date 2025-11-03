@@ -3,6 +3,7 @@ export const data = {
 		'HTML',
 		'CSS',
 		'JavaScript',
+		'Golang',
 		'jQuery',
 		'Fabric.js',
 		// 'SVG.js',
@@ -15,8 +16,7 @@ export const data = {
 		'Koa.js',
 		'MongoDB',
 		'Shopify Development',
-		'Python',
-		'Golang'
+		'Python'
 		// 'Digital Marketing'
 	],
 	skillsWithDevIcons: {
@@ -24,6 +24,7 @@ export const data = {
 		CSS: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg',
 		JavaScript:
 			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+		Golang: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg',
 		jQuery:
 			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg',
 		'Fabric.js': 'https://fabricjs.com/logo.svg',
@@ -44,7 +45,6 @@ export const data = {
 			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg',
 		Python:
 			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg',
-		Golang: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg',
 		json: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg',
 		'Shopify Development': '',
 		'Digital Marketing': ''
@@ -62,8 +62,8 @@ export const data = {
 			technologies:
 				'JavaScript [ jQuery, React.js, Redux, Next.js, Svelte.js, Fabric.js, SVG.js, json-diff-patch ], Git, SVN',
 			description: `
-				<ul class="list-disc flex flex-col gap-2">
-				<li>I contributed to high-impact eCommerce and frontend projects at NopAdvance LLP, collaborating with their Norwegian partner, Digitroll. My work focused on delivering innovative solutions for NopCommerce-based platforms, driving enhancements in user experience, performance optimization, feature integration & fixing bugs.</li>
+				<ul class="list-disc flex flex-col gap-2 ml-4">
+				<li>Contributed to high-impact eCommerce and frontend projects at NopAdvance LLP, collaborating with their Norwegian partner, Digitroll. My work focused on delivering innovative solutions for NopCommerce-based platforms, driving enhancements in user experience, performance optimization, feature integration & fixing bugs.</li>
 				<li><b><a href="https://youtu.be/Bt52YNB05ss?si=K7zLnbq1EeIP-CLv" target="_blank">Page Builder Plugin</a></b>: Developed a fully functional, grid-based drag-and-drop page builder for NopCommerce (similar to Smartstore and Squarespace) using JavaScript and native Drag & Drop APIs. Optimized performance with 'json-diff-patch' for unlimited undo/redo steps and dynamic components (products, categories, images, text, buttons, videos, custom code, etc.) with responsive design.</li>
 				<li><b><a href="https://test.furnitureleisure.com/deckdesigner" target="_blank">Deck Designer Plugin</a></b>: Built a complex SVG-based outdoor planning tool that allowed users to design custom lawn/pool layouts, with drag-and-drop functionality, shape drawing, product placement, and cart integration.</li>
 				<li><b><a href="https://foldal.no" target="_blank">Canvas-Based Product Customization</a></b>: Developed advanced product customization tools with Fabric.js, enabling users to personalize products (e.g., text including curved text options, images, font rendering, canvas-to-SVG/PDF conversion).</li>
