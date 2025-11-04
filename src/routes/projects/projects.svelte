@@ -1,6 +1,6 @@
 <script>
-	import BubbleSort from '$lib/components/projects/bubbleSort/bubbleSort.svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
+	import BubbleSort from './bubble-sort/bubble-sort.svelte';
 </script>
 
 <div id="projects" class="projects-section">

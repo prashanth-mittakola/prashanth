@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { afterNavigate } from '$app/navigation';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
 	import * as Sheet from '$lib/components/ui/sheet/index.js';
@@ -9,7 +10,8 @@
 		GraduationCap,
 		Menu,
 		Shapes,
-		SunMoon
+		SunMoon,
+		House
 	} from '@lucide/svelte';
 
 	import { mode, toggleMode as _toggleMode } from 'mode-watcher';
@@ -19,6 +21,11 @@
 	};
 	const navBarData = {
 		items: [
+			{
+				title: 'Home',
+				icon: House,
+				href: '/'
+			},
 			{
 				title: 'Skills',
 				icon: Shapes,
@@ -46,6 +53,12 @@
 			}
 		]
 	};
+
+	let open = $state(false);
+	afterNavigate((e) => {
+		console.log(e);
+		open = false;
+	});
 </script>
 
 <nav>
@@ -91,7 +104,7 @@
 				</h2>
 			</a>
 			<div class="flex flex-row items-center justify-end">
-				<Sheet.Root>
+				<Sheet.Root bind:open onOpenChange={(val) => (open = val)}>
 					<Sheet.Trigger>
 						<Menu />
 					</Sheet.Trigger>

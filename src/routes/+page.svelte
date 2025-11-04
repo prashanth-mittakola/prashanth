@@ -98,23 +98,37 @@
 	<h3 class="my-4 text-center text-2xl font-bold">Achievements</h3>
 
 	<Card.Root class="my-4 w-full px-8">
-		<Card.Content class="flex flex-wrap justify-center gap-8">
+		<Card.Content class="flex flex-wrap justify-center gap-8 ">
 			<div class="achivement-wrapper flex max-w-80 flex-col flex-wrap justify-around gap-4">
 				<a target="_blank" href={certificatePythonImage}>
-					<img src={certificatePythonImage} alt="certificate-python-prashanth-mittakola.png" />
+					<img
+						src={certificatePythonImage}
+						alt="certificate-python-prashanth-mittakola.png"
+						class="border-2 border-gray-400 p-2"
+					/>
 				</a>
-				<Card.Header class="text-center"><Card.Title>Python</Card.Title></Card.Header>
+				<Card.Description class="text-center">
+					Python Programming Certificate - Completed with
+					<br />
+					<a href="https://codewithmosh.com/" target="_blank" title="code with mosh">
+						<em>Mosh Hamedani (Code with Mosh)</em>, 2020
+					</a>
+				</Card.Description>
 			</div>
+			<Separator class="my-1" />
 			<div class="achivement-wrapper flex max-w-3xs flex-col flex-wrap justify-around gap-4">
 				<a target="_blank" href={certificateGoogleAdsFundamentalsImage}>
 					<img
 						src={certificateGoogleAdsFundamentalsImage}
 						alt="certificate-google-ads-fundamentals.png"
+						class="border-2 border-gray-400 p-2"
 					/>
 				</a>
-				<Card.Header class="text-center"
-					><Card.Title>Google Ads fundamentals</Card.Title></Card.Header
-				>
+				<Card.Description class="text-center">
+					Google Ads fundamentals
+					<br />
+					<em>year 2018</em>
+				</Card.Description>
 			</div>
 		</Card.Content>
 	</Card.Root>
