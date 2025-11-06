@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-	<title>Prashanth Mittakola - Homepage</title>
+	<title>Prashanth Mittakola</title>
 	<meta name="description" content="Prashanth mittakola app" />
 
 	<link
