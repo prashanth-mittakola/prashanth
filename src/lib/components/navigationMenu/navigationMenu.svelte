@@ -15,10 +15,14 @@
 	} from '@lucide/svelte';
 
 	import { mode, toggleMode as _toggleMode } from 'mode-watcher';
+
+	import resume from '../../../public/images/Mittakola-Prashanth-Resume.pdf';
+
 	const toggleMode = () => {
 		_toggleMode();
 		document.documentElement.classList.toggle('dark');
 	};
+
 	const navBarData = {
 		items: [
 			{
@@ -49,7 +53,7 @@
 			{
 				title: 'Resume',
 				icon: FileUser,
-				href: '/src/public/images/Mittakola-Prashanth-Resume.pdf',
+				href: resume,
 				download: 'Mittakola-Prashanth-Resume.pdf',
 				target: '_blank'
 			}
