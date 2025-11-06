@@ -49,22 +49,23 @@
 			{
 				title: 'Resume',
 				icon: FileUser,
-				href: '/'
+				href: '/src/public/images/Mittakola-Prashanth-Resume.pdf',
+				download: 'Mittakola-Prashanth-Resume.pdf',
+				target: '_blank'
 			}
 		]
 	};
 
 	let open = $state(false);
 	afterNavigate((e) => {
-		console.log(e);
 		open = false;
 	});
 </script>
 
 <nav>
 	{#snippet navItems()}
-		{#each navBarData.items as item}
-			<a href={item.href}>
+		{#each navBarData.items as { download, target, ...item }}
+			<a href={item.href} {download} {target}>
 				<Button class="flex flex-row items-center justify-center gap-2" variant="ghost">
 					<span class="text-xl"><item.icon /></span>
 					<span>{item.title}</span>

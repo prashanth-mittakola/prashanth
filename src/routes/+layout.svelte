@@ -19,13 +19,15 @@
 			<a href="mailto:mittakolaprashanth@gmail.com" class="text-blue-600 hover:underline">Email</a>
 			<span class="text-gray-400">|</span>
 			<a
-				href="https://linkedin.com/in/yourprofile"
+				href="https://www.linkedin.com/in/prashanth-mittakola-13191b164/"
 				target="_blank"
 				class="text-blue-600 hover:underline">LinkedIn</a
 			>
 			<span class="text-gray-400">|</span>
-			<a href="https://github.com/yourgithub" target="_blank" class="text-blue-600 hover:underline"
-				>GitHub</a
+			<a
+				href="https://github.com/prashanth-mittakola"
+				target="_blank"
+				class="text-blue-600 hover:underline">GitHub</a
 			>
 			<span class="text-gray-400">|</span>
 			<a href="tel:+918866238837" target="_blank" class="text-blue-600 hover:underline">Phone</a>

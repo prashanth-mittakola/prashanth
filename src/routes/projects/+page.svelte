@@ -2,6 +2,10 @@
 	import * as Card from '$lib/components/ui/card/index';
 </script>
 
+<svelte:head>
+	<title>Prashanth Mittakola - Projects page</title>
+</svelte:head>
+
 <div class="projects-page-wrapper">
 	<h2 class="my-4 text-center text-2xl font-bold">Sample Projects</h2>
 	<div class="proejects-wrapper text-center">

@@ -3,7 +3,7 @@
 	import * as Card from '$lib/components/ui/card/index.js';
 	import Education from './education/education.svelte';
 	import Experience from './experience/experience.svelte';
-	import SkillCards from './skills/skillCards.svelte';
+	import Skills from './skills/skills.svelte';
 	import Projects from './projects/projects.svelte';
 
 	import prashanthImage from '../public/images/prashanth.jpg';
@@ -46,7 +46,7 @@
 </div>
 
 <Separator class="my-4" />
-<SkillCards enableCarousel={true} />
+<Skills enableCarousel={true} />
 
 <Separator class="my-4" />
 <Experience />
